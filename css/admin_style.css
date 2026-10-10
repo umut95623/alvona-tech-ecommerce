@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Sree+Krushnadevaraya&display=swap');
+
+:root
+{
+   --temelrenk:#ff9100;
+   --acikturuncu:#ffb700;
+   --kirmizi:#ff0000;
+   --siyah:#0a0a0a;
+   --beyaz:#ffedc3;
+   --gri:#4d4128;
+   --aciksari:#fdd889;
+}
+
+*{
+   font-family: "Sree Krushnadevaraya", serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+
+*::selection
+{
+   background-color: var(--temelrenk);
+   color:var(--beyaz);
+}
+
+html
+{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body
+{
+   background-color: var(--aciksari);
+}
+
+section
+{
+   padding:0.6rem;
+   width: 1300px;
+   margin:0 auto;
+}
+
+.baslik
+{
+   font-size: 6rem;
+   color:var(--siyah);
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+.buton,
+.silmebutonu,
+.secmebutonu
+{
+   display: block;
+   width: 100%;
+   margin-top: 2rem;
+   border-radius: 2rem;
+   padding:1rem 2rem;
+   font-size: 2rem;
+   color:var(--beyaz);
+   cursor: pointer;
+   text-align: center;
+}
+
+.buton:hover,
+.silmebutonu:hover,
+.secmebutonu:hover
+{
+   filter: brightness(70%);
+}
+
+.buton
+{
+   background-color: var(--temelrenk);
+}
+
+.secmebutonu
+{
+   background-color: var(--acikturuncu);
+}
+
+.silmebutonu
+{
+   background-color: var(--kirmizi);
+}
+
+.flex-buton
+{
+   display: flex;
+   gap:1rem;
+}
+
+.gizlibuton
+{
+   visibility: hidden;
+}
+
+.iptalbutonu
+{
+   background-color: #ad0000;
+   cursor: pointer;
+   width: 24px;
+   height: 24px;
+   border: #5b2727 .2rem solid;
+}
+
+.mesaj
+{
+   position: sticky;
+   z-index: 10;
+   top:0;
+   margin:0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 1200px;
+   background-color: var(--aciksari);
+}
+
+.mesaj span
+{
+   font-size: 2rem;
+   color:var(--siyah);
+}
+
+.mesaj i
+{
+   cursor: pointer;
+   color:var(--kirmizi);
+   font-size: 2.5rem;
+}
+
+.mesaj i:hover
+{
+   filter: brightness(70%);
+}
+
+.bos{
+   padding:3rem;
+   background-color: #ba8600;
+   text-align: center;
+   color:var(--kirmizi);
+   border-radius: 3rem;
+   font-size: 2.7rem;
+}
+
+.yonetici-girisi
+{
+   min-height: 80rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.yonetici-girisi form
+{
+   padding:2rem;
+   text-align: center;
+   background-color: var(--beyaz);
+   border-radius: 3.5rem;
+   width: 70rem;
+}
+
+.yonetici-girisi form h3
+{
+   color:var(--siyah);
+   margin-bottom: .5rem;
+   font-size: 4rem;
+}
+
+.yonetici-girisi form p
+{
+   font-size: 2.6rem;
+   color:var(--gri);
+   margin-bottom: 1rem;
+}
+
+.yonetici-girisi form p span
+{
+   color:var(--acikturuncu);
+}
+
+.yonetici-girisi form .box
+{
+   width: 100%;
+   margin: .5rem 0;
+   border-radius: 1.6rem;
+   background-color: var(--aciksari);
+   padding: 1.8rem;
+   font-size: 1.8rem;
+   color:var(--siyah);
+}
+
+.header
+{
+   position: sticky;
+   top:0; left:0; right:0;
+   background-color: var(--beyaz);
+   z-index: 1000;
+}
+
+.header .flex
+{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 1700px;
+   position: relative;
+}
+
+.header .flex .logo
+{
+   font-size: 2.5rem;
+   color:var(--siyah);
+}
+
+.header .flex .navbar a
+{
+   margin:0 1rem;
+   font-size: 2rem;
+   color:var(--siyah);
+}
+
+.header .flex .navbar a:hover
+{
+   color:var(--temelrenk);
+}
+
+.header .flex .profile
+{
+   position: absolute;
+   visibility: hidden;
+}
+
+
+.yoneticipaneli .box-container
+{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+   gap: 3.3rem;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.yoneticipaneli .box-container .box
+{
+   padding: 3rem;
+   text-align: center;
+   border-radius: 7rem;
+   background-color: var(--beyaz);
+}
+
+.yoneticipaneli .box-container .box h3
+{
+   font-size: 4rem;
+   color:var(--siyah);
+   padding: 4rem;
+}
+
+.yoneticipaneli .box-container .box h3 span
+{
+   font-size: 3.6rem;
+}
+
+.yoneticipaneli .box-container .box p{
+   padding:1.7rem;
+   border-radius: 2rem;
+   background-color: var(--aciksari);
+   font-size: 2rem;
+   color:var(--gri);
+}
+
+.urun-ekle form
+{
+   width: 75rem;
+   margin: 0 auto;   
+   background-color: var(--beyaz);
+   border-radius: 5rem;
+   padding: 3.6rem;
+}
+
+.urun-ekle form .flex
+{
+   display: flex;
+   gap:1.5rem;
+   flex-wrap: wrap;
+}
+
+.urun-ekle form .flex .inputBox
+{
+   flex:1 1 25rem;
+} 
+
+.urun-ekle form span
+{
+   font-size:2rem;
+   color:var(--gri);
+}
+
+.urun-ekle form .box
+{
+   font-size: 1.7rem;
+   background-color: var(--aciksari);
+   border-radius: 2rem;
+   padding: 1.4rem;
+   width: 100%;
+   margin-top: 1.5rem;
+}
+
+.urun-ekle form textarea
+{
+   height: 6.5rem;
+   resize: none;
+}
+
+.urun-goster .box-container
+{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 33rem);
+   gap:1.5rem;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.urun-goster .box-container .box
+{
+   background-color: var(--beyaz);
+   border-radius: 4rem;
+   padding:2rem;
+}
+
+.urun-goster .box-container .box img
+{
+   width: 100%;
+   height: 20rem;
+   object-fit: contain;
+   margin-bottom: 1.5rem;
+}
+
+.urun-goster .box-container .box .urun-adi
+{
+   font-size: 4rem;
+   color:var(--siyah);
+}
+
+.urun-goster .box-container .box .urun-fiyati
+{
+   font-size: 3rem;
+   color: #318100;
+   margin:.5rem 0;
+}
+
+.urun-goster .box-container .box .urun-bilgisi
+{
+   font-size: 2rem;
+   color:var(--gri);
+}
+
+.verilmis-siparisler .box-container
+{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 33rem);
+   gap:1.5rem;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.verilmis-siparisler .box-container .box
+{
+   padding:2rem;
+   padding-top: 1rem;
+   border-radius: 3rem;
+   background-color: var(--beyaz);
+}
+
+.verilmis-siparisler .box-container .box p
+{
+   line-height: 1.5;
+   font-size: 2rem;
+   color:var(--gri);
+   margin:1rem 0;
+}
+
+.verilmis-siparisler .box-container .box p span
+{
+   color:var(--temelrenk);
+}
+
+.verilmis-siparisler .box-container .select
+{
+   margin-bottom: .5rem;
+   width: 100%;
+   background-color: var(--aciksari);
+   padding:1rem;
+   font-size: 1.8rem;
+   color:var(--siyah);
+   border-radius: .5rem;
+}
+
+.kullanici-hesaplari .box-container
+{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 41rem);
+   gap:1.5rem;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.kullanici-hesaplari .box-container .box
+{
+   padding:2rem;
+   padding-top: .5rem;
+   border-radius: 2rem;
+   text-align: center;
+   background-color: var(--beyaz);
+}
+
+.kullanici-hesaplari .box-container .box p
+{
+   font-size: 2rem;
+   color:var(--gri);
+   margin: 1rem 0;
+}
+
+.kullanici-hesaplari .box-container .box p span
+{
+   color:var(--temelrenk);
+}
